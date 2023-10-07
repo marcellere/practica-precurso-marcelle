@@ -321,33 +321,59 @@ main #news .flex article a h3 {
 /* COMIENZO DE LOS ESTILOS DE LA PÁGINA ABOUT */
 
 /* comienzo teams */
-main .team {
+main #team {
     text-align: center;
 }
 
-main .team h3 {
+main #team h3 {
     font-size: 1.5rem;
     padding: 0.3rem 0;
     color: var(--mainColor);
 }
 
-main .team h4 {
+main #team h4 {
     color: var(--secondaryColor);
     font-size: 1.5rem;
 }
 
-main .team .flex {
+main #team .flex {
     display: flex;
     flex-direction: column;
     gap: var(--space);
 }
 
-main .team .box {
+main #team .box {
     background-color: var(--colorButton);
     padding: 6.25rem 3.125rem;
     font-size: 1.5rem;
     margin-top: calc(var(--space)*2);
 }
+
+main #team figure {
+    overflow: hidden;
+    transform: rotate(45deg);
+    transition: 1s;
+    margin: 100px 80px;
+
+    &:hover {
+        transform: rotate(0deg);
+    }
+}
+
+main #team figure img {
+    overflow: hidden;
+    transform: rotate(-45deg) scale(1.5);
+    transition: 1s;
+
+    &:hover {
+        transform: rotate(0deg);
+    }
+
+
+}
+
+
+
 
 
 
