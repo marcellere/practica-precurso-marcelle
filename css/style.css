@@ -368,14 +368,76 @@ main #team figure img {
     &:hover {
         transform: rotate(0deg);
     }
+}
 
-
+#team .box a {
+    color: var(--mainColor);
+    display: inline-block;
+    padding: 0.20rem 0rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--secondaryColor);
 }
 
 
 /* final teams */
 
+/* comienzo de method */
 
+#method ul {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#method li {
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+}
+
+#method li a p:first-child {
+    color: var(--secondaryColor);
+}
+
+#method li:first-child {
+    border-bottom: 2px solid var(--mainColor);
+
+}
+
+#method a {
+    text-decoration: none;
+}
+
+#method p {
+    color: var(--mainColor);
+}
+
+#method a p:last-child {
+    display: none;
+}
+
+#method h3 {
+    text-align: center;
+    color: var(--mainColor);
+    padding: 1.25rem 0;
+    font-size: 1.5rem;
+}
+
+section#method nav ul li.active p {
+    color: var(--mainColor);
+    font-weight: 500;
+}
+
+#method p.method {
+    color: var(--mainColor);
+    font-size: 1.25rem;
+}
+
+
+/* final de method */
 
 
 /* FINAL DE LOS ESTILOS DE LA PÁGINA ABOUT */
@@ -430,10 +492,13 @@ main #team figure img {
 
     main #ourexpertise .flex {
         flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     main #ourexpertise article {
         text-align: left;
+        width: 30%;
     }
 
     main #ourexpertise article figure {
@@ -478,6 +543,29 @@ main #team figure img {
         margin: 4.375em 3.75rem;
     }
 
+
+    #method a p {
+        color: var(--secondaryColor);
+    }
+
+
+    #method a p:first-child {
+        display: none;
+    }
+
+    #method a p:last-child {
+        display: block;
+    }
+
+    #method a:hover p {
+        color: var(--mainColor);
+    }
+
+
+    #method h3 {
+        display: none;
+    }
+
 }
 
 @media(min-width: 62.5rem) {
@@ -488,6 +576,11 @@ main #team figure img {
 
     main #team .flex article {
         width: 32%;
+    }
+
+
+    main #team .flex article:last-child {
+        margin-right: auto;
     }
 
 
