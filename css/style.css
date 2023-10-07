@@ -318,8 +318,45 @@ main #news .flex article a h3 {
 /* final de news */
 
 
+/* COMIENZO DE LOS ESTILOS DE LA PÁGINA ABOUT */
+
+/* comienzo teams */
+main .team {
+    text-align: center;
+}
+
+main .team h3 {
+    font-size: 1.5rem;
+    padding: 0.3rem 0;
+    color: var(--mainColor);
+}
+
+main .team h4 {
+    color: var(--secondaryColor);
+    font-size: 1.5rem;
+}
+
+main .team .flex {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+}
+
+main .team .box {
+    background-color: var(--colorButton);
+    padding: 6.25rem 3.125rem;
+    font-size: 1.5rem;
+    margin-top: calc(var(--space)*2);
+}
 
 
+
+/* final teams */
+
+
+
+
+/* FINAL DE LOS ESTILOS DE LA PÁGINA ABOUT */
 
 
 /* mediaqueries */
