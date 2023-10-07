@@ -566,6 +566,10 @@ section#method nav ul li.active p {
         display: none;
     }
 
+    #method .method {
+        margin-top: var(--space);
+    }
+
 }
 
 @media(min-width: 62.5rem) {
