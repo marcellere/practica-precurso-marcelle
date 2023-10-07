@@ -353,7 +353,7 @@ main #team figure {
     overflow: hidden;
     transform: rotate(45deg);
     transition: 1s;
-    margin: 100px 80px;
+    margin: 6.25rem 5rem;
 
     &:hover {
         transform: rotate(0deg);
@@ -362,7 +362,7 @@ main #team figure {
 
 main #team figure img {
     overflow: hidden;
-    transform: rotate(-45deg) scale(1.5);
+    transform: rotate(-45deg) scale(1.6);
     transition: 1s;
 
     &:hover {
@@ -371,10 +371,6 @@ main #team figure img {
 
 
 }
-
-
-
-
 
 
 /* final teams */
@@ -441,7 +437,7 @@ main #team figure img {
     }
 
     main #ourexpertise article figure {
-        max-width: 100px;
+        max-width: 6.25rem;
         margin: 0;
     }
 
@@ -463,17 +459,38 @@ main #team figure img {
     }
 
     main #news article figure {
-        max-height: 200px;
+        max-height: 12.5rem;
         overflow: hidden;
+    }
+
+    main #team .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    main #team .flex article {
+        width: 45%;
+    }
+
+    main #team figure {
+        margin: 4.375em 3.75rem;
     }
 
 }
 
-@media(min-width: 1000px) {
+@media(min-width: 62.5rem) {
     main #news article figure {
-        max-height: 280px;
+        max-height: 17.5rem;
         overflow: hidden;
     }
+
+    main #team .flex article {
+        width: 32%;
+    }
+
+
 }
 
 @media(min-width: 87.5rem) {
@@ -488,5 +505,13 @@ main #team figure img {
     main #news article figure {
         max-height: 400px;
         overflow: hidden;
+    }
+
+    main #team .flex article {
+        width: 23%;
+    }
+
+    main #team figure {
+        margin: 3.5rem 3rem;
     }
 }
